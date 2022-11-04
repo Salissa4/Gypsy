@@ -34,11 +34,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+• Alexandria Guerrero Github: https://github.com/Ag6793
+• Elena Huerta Github: https://github.com/Kosmonaut3173
+• Greg Cervantes Github: https://github.com/GregCervantes
+• Salissa Hernandez Github: https://github.com/Salissa4
+• Shelby Hernandez Github: https://github.com/Shernandez927
 
 ## License
 

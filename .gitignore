@@ -1,3 +1,10 @@
+# Mac
+.DS_Store
+assets/.DS_Store
+
+#instructions
+instructions
+
 # Logs
 logs
 *.log

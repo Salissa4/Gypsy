@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -17,7 +18,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    //not sure if we need name
+    // not sure if we need name
     name: {
       type: DataTypes.STRING,
       allowNull: false,

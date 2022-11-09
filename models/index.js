@@ -15,4 +15,4 @@ Maps.hasMany(Marker, {
     foreignKey: 'map_id'
 });
 
-module.exports = { User, Marker };
+module.exports = { User, Marker, Maps };

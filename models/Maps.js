@@ -11,7 +11,11 @@ Maps.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: { // City Name gathered from coordinates?
+    city_name: { // City Name gathered from coordinates?
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    city_state: { // State Name gathered from coordinates?
         type: DataTypes.STRING,
         allowNull: false
     },

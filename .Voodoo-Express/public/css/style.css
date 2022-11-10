@@ -1,0 +1,44 @@
+* {
+  background-color: #f2f2f0;
+}
+.image.is-128x128 {
+  border-radius: 50%;
+}
+.callsign {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.callsign1 {
+  position: absolute;
+  bottom: 25;
+  left: 0;
+}
+.field {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  bottom: 25;
+}
+
+/* button styling */
+.button.is-success #submit {
+  background-color: purple;
+  color: black;
+  border: 2px solid white;
+  font-family: nunito;
+}
+.button.is-success:hover.is-success:hover {
+  background-color: grey;
+  color: white;
+}
+.callsign {
+  bottom: left;
+}
+
+@media screen and (min-width: 768px) {
+}

@@ -24,6 +24,10 @@ const init = async () => {
   renderMapData(map_coordinates_lat, map_coordinates_lon);
 };
 
+const renderAustinMarkers = (value) => {
+  console.log(value);
+};
+
 // // Working function to double click to place marker on map and get coordinate data
 // map.on('dblclick', (e) => {
 //   L.marker(e.latlng).addTo(map);
@@ -32,3 +36,9 @@ const init = async () => {
 // });
 
 init();
+
+austin.addEventListener('click', (e) => {
+  e.preventDefault();
+  let value = austin.innerText;
+  renderAustinMarkers(value);
+});

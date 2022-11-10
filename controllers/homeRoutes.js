@@ -1,21 +1,25 @@
-const router = require("express").Router();
+const router = require('express').Router();
 
-router.get("/", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
+router.get('/', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
     return;
   }
 
-  res.render("homepage");
+  res.render('homepage');
 });
 
-router.get("/signup", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
+router.get('/signup', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
     return;
   }
 
-  res.render("signup");
+  res.render('signup');
+});
+
+router.get('/map', (req, res) => {
+  res.render('map');
 });
 
 module.exports = router;

@@ -1,0 +1,35 @@
+#circle {
+    background-color: rgb(196, 138, 178);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+}
+header {
+    text-align:center;
+    padding-top: 125px;
+    color: white;
+  
+}
+
+#small{
+    font-size: 35px;
+ 
+
+}
+
+#big {
+    font-family: 'Acme', sans-serif;
+    font-size: 125px;
+    line-height: 0.8;
+   
+}
+
+
+
+
+p {
+    background:none;
+}

@@ -1,5 +1,24 @@
 const router = require("express").Router();
-const { User, Marker, Maps } = require("../models"); // TODO: Import Models
+const { User, Marker } = require("../models"); // TODO: Import Models
+
+router.get("/", async (req, res) => {
+  try {
+    // const Data = await Post.findAll({
+    //   attributes: ["id", "title", "content", "created_at"],
+    //   include: [
+    //    TODO: Implement Map and Marker Models
+    //   ],
+    // });
+    // const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render("homepage", { // TODO: Implement Handlebars Template
+      // posts,
+      // loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // router.get("/", async (req, res) => {
 //   try {
@@ -13,7 +32,7 @@ const { User, Marker, Maps } = require("../models"); // TODO: Import Models
 
 //     res.render("", { // TODO: Implement Handlebars Template
 //       posts,
-//       loggedIn: req.session.loggedIn,
+      // loggedIn: req.session.loggedIn,
 //     });
 //   } catch (err) {
 //     res.status(500).json(err);

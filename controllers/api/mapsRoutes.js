@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Marker, Maps } = require('../../models');
+const { Marker, Maps } = require('../../models');
 
 router.get('/api/maps', async (req, res) => {
     try {
@@ -14,10 +14,14 @@ router.get('/api/maps', async (req, res) => {
 
   router.get('/api/maps/:id', async (req, res) => {
     try {
-        const mapData = await Maps.findOne({});
+        const mapRendering = await Maps.findOne({});
+        const mapMarkers = await Marker.findAll({});
+        const mapData = [ ...mapMarkers, ...mapRendering];
         
-
+      res.status(200).json(mapData);
     } catch (err) {
         res.status(500).json(err);
     }
   });
+
+module.exports = router;

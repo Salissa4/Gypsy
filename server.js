@@ -14,22 +14,22 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
-const sess = {
-  secret: process.env.SESS_SECRET, // need to add process.env
-  cookie: {
-    maxAge: 300000,
-    httpsOnly: true,
-    secure: false,
-    sameSite: 'strict',
-  },
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
-};
+// const sess = {
+//   secret: process.env.SESS_SECRET,
+//   cookie: {
+//     maxAge: 300000,
+//     httpsOnly: true,
+//     secure: false,
+//     sameSite: 'strict',
+//   },
+//   resave: false,
+//   saveUninitialized: true,
+//   store: new SequelizeStore({
+//     db: sequelize
+//   })
+// };
 
-app.use(session(sess));
+// app.use(session(sess));
 
 // Inform Express.js on which template engine to use
 // need to see if we need to change these?

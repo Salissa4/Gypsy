@@ -11,16 +11,20 @@ Maps.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: { // City Name gathered from coordinates?
+    city_name: { // City Name gathered from coordinates?
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    city_state: { // State Name gathered from coordinates?
         type: DataTypes.STRING,
         allowNull: false
     },
     map_coordinates_lat: {
-        type: DataTypes.GEOMETRY('POINT'),
+        type: DataTypes.FLOAT,
         allowNull: false
     },
     map_coordinates_lon: {
-      type: DataTypes.GEOMETRY('POINT'),
+      type: DataTypes.FLOAT,
         allowNull: false
     }
   },

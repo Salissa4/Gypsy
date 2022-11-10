@@ -1,0 +1,80 @@
+* {
+    background-color: #f2f2f0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.field {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+  
+  /* button styling */
+.button.is-primary #submit {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    font-family: nunito;
+}
+
+  .button.is-primary:hover {
+    background-color: #ff8ba7;
+    color: white;
+}
+
+.callsign {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 25px;
+  }
+  
+.callsign1 {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    padding-left:25px;
+  }
+
+header {
+    text-align:center;
+    padding-top: 125px;
+    color: white;
+  
+}
+
+#small{
+    font-size: 35px;
+ 
+
+}
+
+#big {
+    font-family: 'Acme', sans-serif;
+    font-size: 125px;
+    line-height: 0.8;
+   
+}
+
+
+#circle {
+    background-color: rgb(196, 138, 178);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+}
+
+p {
+    background:none;
+}
+
+@media screen and (min-width: 768px) {
+  }

@@ -1,16 +1,9 @@
-
 * {
-  background-color: #f2f2f071;
+  background-color: #f2f2f0;
 }
-
-.column1 {
+.image.is-128x128 {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: #4bc475;
-  border: 1px solid #000;
 }
-
 .callsign {
   position: absolute;
   bottom: 0;
@@ -30,18 +23,9 @@
   margin-right: auto;
   float: right;
   bottom: 25;
-  background-color: purple;
 }
 
 /* button styling */
-
-.control {
-  background-color: purple;
-  color: black;
-  border: 2px solid white;
-  font-family: nunito;
-}
-
 .button.is-success #submit {
   background-color: purple;
   color: black;
@@ -58,8 +42,3 @@
 
 @media screen and (min-width: 768px) {
 }
-
-#map { 
-    height: 10rem;
- }
-

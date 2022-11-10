@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const { } = require("../models"); // TODO: Import Models
+const { User, Marker, Maps } = require("../models"); // TODO: Import Models
 
 // router.get("/", async (req, res) => {
 //   try {

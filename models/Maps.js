@@ -15,8 +15,12 @@ Maps.init(
         type: DataTypes.STRING,
         allowNull: false
     },
-    map_coordinates: {
-        type: DataTypes.GEOGRAPHY('POINT'),
+    map_coordinates_lat: {
+        type: DataTypes.GEOMETRY('POINT'),
+        allowNull: false
+    },
+    map_coordinates_lon: {
+      type: DataTypes.GEOMETRY('POINT'),
         allowNull: false
     }
   },

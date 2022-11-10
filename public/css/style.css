@@ -112,7 +112,7 @@ p {
 }
 
 
-* {
+/* 
   background-color: #f2f2f071;
 }
 
@@ -148,7 +148,7 @@ p {
 
 /* button styling */
 
-.control {
+/*.control {
   background-color: purple;
   color: black;
   border: 2px solid white;
@@ -246,4 +246,4 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
-
+ */

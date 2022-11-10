@@ -19,7 +19,10 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:city_name', async (req, res) => {
-  const
+  const mapData = await Maps.findOne({
+    where: req.params,
+  });
+  res.status(200).json(mapData);
 });
 
 router.post('/', async (req, res) => {

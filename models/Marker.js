@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-require('leaflet');
 const sequelize = require('../config/connection');
 
 class Marker extends Model {}
@@ -21,8 +20,12 @@ Marker.init(
         type: DataTypes.STRING
     },
     // Take in Leaflet Cooridnates GeoJSON into field?
-    coordinates: {
-        type: DataTypes.GEOGRAPHY('POINT'),
+    marker_coordinates_lat: {
+        type: DataTypes.GEOMETRY('POINT'),
+        allowNull: false
+    },
+    marker_coordinates_lon: {
+        type: DataTypes.GEOMETRY('POINT'),
         allowNull: false
     },
     date_created: {

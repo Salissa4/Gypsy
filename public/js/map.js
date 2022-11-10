@@ -4,9 +4,9 @@ const dallas = document.getElementById('dallas');
 
 let map;
 
-const renderMapData = (lat, lon) => {
+const renderMapData = (lat, lon, zoom = 5.5) => {
   if (map) map.remove();
-  map = L.map('map').setView([lat, lon], 5.5);
+  map = L.map('map').setView([lat, lon], zoom);
 
   googleStreets = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
@@ -43,7 +43,7 @@ const renderAustinMarkers = async (value) => {
   let austinMapMarkers = await fetch(`/api/markers/${id}`);
   let austinMarkerData = await austinMapMarkers.json();
 
-  renderMapData(map_coordinates_lat, map_coordinates_lon);
+  renderMapData(map_coordinates_lat, map_coordinates_lon, 11);
 
   renderMapMarkers(austinMarkerData);
 };

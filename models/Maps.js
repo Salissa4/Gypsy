@@ -20,11 +20,11 @@ Maps.init(
         allowNull: false
     },
     map_coordinates_lat: {
-        type: DataTypes.GEOMETRY('POINT'),
+        type: DataTypes.FLOAT,
         allowNull: false
     },
     map_coordinates_lon: {
-      type: DataTypes.GEOMETRY('POINT'),
+      type: DataTypes.FLOAT,
         allowNull: false
     }
   },

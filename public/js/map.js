@@ -1,3 +1,7 @@
+const austin = document.getElementById('austin').innerText;
+const houston = document.getElementById('houston').innerText;
+const dallas = document.getElementById('dallas').innerText;
+
 const renderMapData = (lat, lon) => {
   const map = L.map('map').setView([lat, lon], 5.5);
 
@@ -12,6 +16,7 @@ const renderMapData = (lat, lon) => {
 };
 
 const init = async () => {
+  console.log(austin);
   let initialMapData = await fetch('/api/maps/default');
   let { map_coordinates_lat, map_coordinates_lon } =
     await initialMapData.json();

@@ -24,8 +24,10 @@ const init = async () => {
   renderMapData(map_coordinates_lat, map_coordinates_lon);
 };
 
-const renderAustinMarkers = (value) => {
-  console.log(value);
+const renderAustinMarkers = async (value) => {
+  let austinMapData = await fetch(`/api/maps/${value}`);
+  let data = await austinMapData.json();
+  console.log(data);
 };
 
 // // Working function to double click to place marker on map and get coordinate data

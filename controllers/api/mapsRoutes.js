@@ -26,17 +26,13 @@ const { Marker, Maps } = require('../../models');
 //   });
 
 router.post('/', async (req, res) => {
-  try {
-    await Maps.create({
+    const newMap = await Maps.create({
       city_name: req.body.city_name,
       city_state: req.body.city_state,
       map_coordinates_lat: req.body.map_coordinates_lat,
       map_coordinates_lon: req.body.map_coordinates_lon
     });
-    res.status(200).json(res);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+    res.json(newMap);
 });
 
 module.exports = router;

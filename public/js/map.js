@@ -37,17 +37,16 @@ const renderMapMarkers = (markers) => {
   }
 };
 
-const renderAustinMarkers = async (value) => {
-  let austinMapData = await fetch(`/api/maps/${value}`);
-  let { id, map_coordinates_lat, map_coordinates_lon } =
-    await austinMapData.json();
+const getMapAndMarkerData = async (value) => {
+  let mapData = await fetch(`/api/maps/${value}`);
+  let { id, map_coordinates_lat, map_coordinates_lon } = await mapData.json();
 
-  let austinMapMarkers = await fetch(`/api/markers/${id}`);
-  let austinMarkerData = await austinMapMarkers.json();
+  let mapMarkers = await fetch(`/api/markers/${id}`);
+  let markerData = await mapMarkers.json();
 
   renderMapData(map_coordinates_lat, map_coordinates_lon, 11);
 
-  renderMapMarkers(austinMarkerData);
+  renderMapMarkers(markerData);
 };
 
 // // Working function to double click to place marker on map and get coordinate data
@@ -62,5 +61,17 @@ init();
 austin.addEventListener('click', (e) => {
   e.preventDefault();
   let value = austin.innerText;
-  renderAustinMarkers(value);
+  getMapAndMarkerData(value);
+});
+
+houston.addEventListener('click', (e) => {
+  e.preventDefault();
+  let value = houston.innerText;
+  getMapAndMarkerData(value);
+});
+
+dallas.addEventListener('click', (e) => {
+  e.preventDefault();
+  let value = dallas.innerText;
+  getMapAndMarkerData(value);
 });

@@ -22,6 +22,17 @@ router.get('/:city_name', async (req, res) => {
   }
 });
 
+router.get('/default', async (req, res) => {
+  try {
+    const defaultMapData = await Maps.findOne({
+      where: { city_name: 'DEFAULT' },
+    });
+    res.status(200).json(defaultMapData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.post('/', async (req, res) => {
   try {
     const newMap = await Maps.create({

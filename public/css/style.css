@@ -1,3 +1,4 @@
+
 * {
   background-color: #f2f2f071;
 }
@@ -57,3 +58,8 @@
 
 @media screen and (min-width: 768px) {
 }
+
+#map { 
+    height: 10rem;
+ }
+

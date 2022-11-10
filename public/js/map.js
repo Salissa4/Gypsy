@@ -1,6 +1,6 @@
-const austin = document.getElementById('austin').innerText;
-const houston = document.getElementById('houston').innerText;
-const dallas = document.getElementById('dallas').innerText;
+const austin = document.getElementById('austin');
+const houston = document.getElementById('houston');
+const dallas = document.getElementById('dallas');
 
 const renderMapData = (lat, lon) => {
   const map = L.map('map').setView([lat, lon], 5.5);

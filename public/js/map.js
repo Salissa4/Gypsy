@@ -28,11 +28,13 @@ const init = async () => {
 };
 
 const renderMapMarkers = (markers) => {
-  let marker = new L.Marker([
-    markers[0].marker_coordinates_lat,
-    markers[0].marker_coordinates_lon,
-  ]);
-  marker.addTo(map);
+  for (let mark of markers) {
+    let marker = new L.Marker([
+      mark.marker_coordinates_lat,
+      mark.marker_coordinates_lon,
+    ]);
+    marker.addTo(map);
+  }
 };
 
 const renderAustinMarkers = async (value) => {

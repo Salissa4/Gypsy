@@ -1,17 +1,6 @@
 /* eslint-disable camelcase */
 const router = require('express').Router();
-const { Marker, Maps } = require('../../models');
-
-// router.get('/', async (req, res) => {
-//     try {
-//       const mapRendering = await Maps.findAll({});
-//       const mapMarkers = await Marker.findAll({});
-//       const mapData = [ ...mapMarkers, ...mapRendering];
-//       res.status(200).json(mapData);
-//     } catch (err) {
-//       res.status(500).json(err);
-//     }
-//   });
+const { Maps } = require('../../models');
 
 //   router.get('/:id', async (req, res) => {
 //     try {
@@ -25,9 +14,12 @@ const { Marker, Maps } = require('../../models');
 //     }
 //   });
 router.get('/', async (req, res) => {
-  const mapData = await Maps.findAll({});
-  const data = [...mapData];
-  res.status(200).json(data);
+  const allMapData = await Maps.findAll({});
+  res.status(200).json(allMapData);
+});
+
+router.get('/:city_name', async (req, res) => {
+  const
 });
 
 router.post('/', async (req, res) => {

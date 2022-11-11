@@ -1,45 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wfw6lvd.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='https://use.typekit.net/wfw6lvd.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='' />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Acme&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      href='https://unpkg.com/leaflet@1.9.2/dist/leaflet.css'
+      integrity='sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14='
+      crossorigin=''
+    />
+    <link
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'
+    />
+    <link rel='stylesheet' href='./css/normalize.css' />
+    {{!-- <link rel='stylesheet' href='./css/style.css' /> --}}
     <title>Gypsy</title>
-</head>
-<body>
-    <nav class="navbar has-shadow is-link">
-      <div class="navbar-brand">
-        <h1 class="ml-3 is-size-3 has-text-weight-medium">my_Techblog();</h1>
-        <a class="navbar-burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-    <div class="navbar-menu" id="navbar-links">
-        <div class="navbar-end">
-          <a class="navbar-item" href="/">Home</a>
-          {{#if loggedIn}}
-          <a class="navbar-item" id="logout" href="/">Logout</a>
-          {{else}}
-          <a class="navbar-item" id="login" href="/login">Login</a>
-          <a class="navbar-item" href="/signup">Sign Up</a>
-          {{/if}}
-        </div>
-      </div>
-    </nav>
+  </head>
+  <body>
+    {{> nav}}
     {{{body}}}
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/logout.js"></script>
-    <script src="./js/map.js"></script>
-</body>
+  </body>
 </html>

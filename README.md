@@ -2,13 +2,13 @@
 
 ## Description
 
-Gypsy is a full stack application that allows users to select a city
+Do you ever travel and visit cool places but have no way to track the awesome places you would like to revisit? Gypsy is an app that allows any user to create a profile, drop markers on locations in Austin, Dallas, or Houston, allowing you, the traveler to save with a the ability to write a description. 
 
 ## User Story
 
 ```
-AS A user
-I WANT 
+AS A user 
+I WANT to login/sign up 
 SO THAT 
 ```
 
@@ -32,7 +32,7 @@ Live on [Heroku](https://hidden-fjord-92895.herokuapp.com/)
 
 ## Future Development
 
-## Installation
+## Local Installation
 
 To run via local environment: 
 1.  Clone the repository
@@ -76,6 +76,7 @@ DevDependencies:
 
 • Shelby Hernandez Github: https://github.com/Shernandez927
 
+• Shawn Tschoepe Github: https://github.com/shawn220a
 
 ## License
 

@@ -3,7 +3,6 @@ const userRoutes = require('./userRoutes');
 const markerRoutes = require('./markerRoutes');
 const mapsRoutes = require('./mapsRoutes');
 
-// TODO: Are Map routes needed?
 
 router.use('/user', userRoutes);
 router.use('/markers', markerRoutes);

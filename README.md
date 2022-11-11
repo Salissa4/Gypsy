@@ -2,7 +2,7 @@
 
 ## Description
 
-Do you ever travel and visit cool places but have no way to track the awesome places you would like to revisit? Gypsy is an app that allows any user to create a profile, drop markers on locations in Austin, Dallas, or Houston, allowing you, the traveler to save with a the ability to write a description. 
+Do you ever travel and visit cool places but have no way to track the awesome places you would like to revisit? Gypsy is an app that allows any user to create a profile, drop markers on locations in Austin, Dallas, or Houston, allowing you, the traveler to save a location with a the ability to write a description. 
 
 ## User Story
 

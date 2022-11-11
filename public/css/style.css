@@ -19,7 +19,7 @@ body {
 }
 
 /* TODO: IMPORT BACKGROUND IMAGE */
-html {
+/* html {
   overflow-y: hidden !important;
   background-image: url("../media/background.jpg") !important;
   -webkit-background-size: cover;
@@ -28,7 +28,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .hero.is-success {
   background: #f2f6fa;

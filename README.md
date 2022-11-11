@@ -12,14 +12,34 @@ I WANT
 SO THAT 
 ```
 
+## Acceptance Criteria
+
+```
+GIVEN a
+WHEN I 
+THEN an
+WHEN  
+THEN 
+```
+
 ## Usage
 
-Live on [Heroku](https://.com/) 
+Live on [Heroku](https://hidden-fjord-92895.herokuapp.com/) 
 
 ![Gypsy](/assets/demo.png)
 
+## Technologies Used
+
+## Future Development
+
 ## Installation
 
+To run via local environment: 
+1.  Clone the repository
+
+2.  Open terminal, and navigate to the appropriate directory
+
+3.  From command line:
 - `npm install` 
 
 Dependencies:

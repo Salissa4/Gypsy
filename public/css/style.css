@@ -1,33 +1,17 @@
-html,
-body {
+
+* {
+  /* background-color: #f2f2f071; Transparency is causing a weird gradient effect */
   font-family: "Quicksand", serif;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 300;
 }
-* {
-  background-color: #f2f2f071;
- 
-}
+
 .subtitle.is-4 {
   color: #bc8ac6;
 }
-.has-text-grey.a {
-  color: black;
-}
+
 .footer-text {
   text-align: left;
-}
-
-/* TODO: IMPORT BACKGROUND IMAGE */
-html {
-  overflow-y: hidden !important;
-  background-image: url("../media/background.jpg") !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .hero.is-success {
@@ -38,19 +22,32 @@ html {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 .box {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 input {
   font-weight: 300;
 }
+
 p {
   font-weight: 700;
 }
+
 p.subtitle {
   padding-top: 1rem;
 }
+
+p.text_center{
+  text-align:center;
+}
+
+p.slogan {
+  font-size: 20px;
+}
+
 .button.is-link.px-4 {
   background-color: #bc8ac6;
 }
@@ -72,19 +69,17 @@ a:hover {
 }
 
 #small{
-  font-size: 20px;
-
-
+  font-size: 20px; /*Font size for top logo text*/
 }
 
-#big {
+#big { 
   font-family: 'Acme', sans-serif;
   font-size: 65px;
   line-height: 0.8;
  
 }
 
-
+/*Format for logo circle and text placement*/
 #circle {
   background-color: rgb(196, 138, 178);
   width: 250px;
@@ -92,10 +87,10 @@ a:hover {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
+  padding-top: 9rem;
 }
 
-p {
+p.whitetxt {
   background:none;
 }
 
@@ -111,139 +106,69 @@ p {
   margin-right: auto;
 }
 
-
-* {
-  background-color: #f2f2f071;
+div#circle {
+  margin-top: 4rem; /*Moves circle down*/
+  margin-bottom: 1rem;
 }
 
-.column1 {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: #4bc475;
-  border: 1px solid #000;
+/* .hero-body {
+  padding-top: 0;
 }
 
-.callsign {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+ .callsign {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .callsign1 {
+    position: absolute;
+    bottom: 25;
+    left: 0;
+  } 
 
-.callsign1 {
-  position: absolute;
-  bottom: 25;
-  left: 0;
-}
 .field {
-  height: 100px;
-  width: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-  bottom: 25;
-  background-color: purple;
-}
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    bottom: 25;
+    background-color: purple; 
+  }*/
+  
+  /* button styling */
+  
 
-/* button styling */
+  /* .control {
+    background-color: purple;
+    color: black;
+    border: 2px solid white;
+    font-family: nunito;
+  }
+  
+  .button.is-success #submit {
+    background-color: purple;
+    color: black;
+    border: 2px solid white;
+    font-family: nunito;
+  }
+  .button.is-success:hover.is-success:hover {
+    background-color: grey;
+    color: white;
+  }
+  .callsign {
+    bottom: left;
+  }
 
-.control {
-  background-color: purple;
-  color: black;
-  border: 2px solid white;
-  font-family: nunito;
-}
-
-.button.is-success #submit {
-  background-color: purple;
-  color: black;
-  border: 2px solid white;
-  font-family: nunito;
-}
-.button.is-success:hover.is-success:hover {
-  background-color: grey;
-  color: white;
-}
-.callsign {
-  bottom: left;
-}
-
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
 }
 
 #map { 
     height: 10rem;
  }
-
- html,
-body {
-  font-family: "Quicksand", serif;
-  font-size: 14px;
-  font-weight: 300;
-}
-* {
-  background-color: #f2f2f071;
-}
-.subtitle.is-4 {
-  color: #bc8ac6;
-}
-.has-text-grey.a {
-  color: black;
-}
-.footer-text {
-  text-align: left;
-}
-
-html {
-  overflow-y: hidden !important;
-  background-image: url("../media/background.jpg") !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero.is-success {
-  background: #f2f6fa;
-}
-.hero .nav,
-.hero.is-success .nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.box {
-  margin-top: 5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-input {
-  font-weight: 300;
-}
-p {
-  font-weight: 700;
-}
-p.subtitle {
-  padding-top: 1rem;
-}
-.button.is-block.is-info.is-large.is-fullwidth {
-  background-color: #bc8ac6;
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  color: #bababa;
-}
-
-.languages {
-  margin-top: 10px;
-}
-
-.footer-text {
-  font-weight: initial;
-}
-
+ 
+ .button.is-block.is-info.is-large.is-fullwidth {
+  background-color: #bc8ac6; 
+} */

@@ -24,7 +24,7 @@
 
 .box {
   /* margin-top: 5rem; */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255);
 }
 
 input {
@@ -122,6 +122,7 @@ div#circle {
   margin-top: 4rem; /*Moves circle down*/
   margin-bottom: 1rem;
 }
+
 
 /* .hero-body {
   padding-top: 0;

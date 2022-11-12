@@ -1,4 +1,3 @@
-
 * {
   /* background-color: #f2f2f071; Transparency is causing a weird gradient effect */
   font-family: "Quicksand", serif;
@@ -40,8 +39,8 @@ p.subtitle {
   padding-top: 1rem;
 }
 
-p.text_center{
-  text-align:center;
+p.text_center {
+  text-align: center;
 }
 
 p.slogan {
@@ -68,15 +67,20 @@ a:hover {
   font-weight: initial;
 }
 
-#small{
+#small {
   font-size: 20px; /*Font size for top logo text*/
 }
 
-#big { 
-  font-family: 'Acme', sans-serif;
+#big {
+  font-family: "Acme", sans-serif;
   font-size: 65px;
   line-height: 0.8;
- 
+}
+#big2 {
+  font-family: "Acme", sans-serif;
+  font-size: 65px;
+  line-height: 0.8;
+  padding-top: 1rem;
 }
 
 /*Format for logo circle and text placement*/
@@ -91,15 +95,23 @@ a:hover {
 }
 
 p.whitetxt {
-  background:none;
+  background: none;
+}
+p.whitetxt2 {
+  background: none;
 }
 
 .whitetxt {
   color: white;
   text-align: center;
 }
+.whitetxt2 {
+  color: white;
+  text-align: center;
+}
 
-.column.is-9, .column.is-9-tablet {
+.column.is-9,
+.column.is-9-tablet {
   flex: none;
   width: 75%;
   margin-left: auto;
@@ -137,11 +149,10 @@ div#circle {
     bottom: 25;
     background-color: purple; 
   }*/
-  
-  /* button styling */
-  
 
-  /* .control {
+/* button styling */
+
+/* .control {
     background-color: purple;
     color: black;
     border: 2px solid white;

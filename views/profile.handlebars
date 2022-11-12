@@ -3,6 +3,11 @@
   <link rel="stylesheet" href="/public/css/style.css"/>
 </head>
 
+{{!-- remember there was a nav partial created --}}
+<div>
+    {{> nav}}
+</div>
+
 {{!-- after user signs in, maybe the site shows their name at top?? --}}
 <div class="is-overlay" id="circle">
     <p class="whitetxt2" id="small">Welcome <br> USERNAME HERE {{name}}!</p>

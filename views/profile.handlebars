@@ -6,7 +6,7 @@
 {{!-- after user signs in, maybe the site shows their name at top?? --}}
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome, USERNAME{{name}}!</h2>
   </div>
 </div>
 
@@ -14,6 +14,55 @@
 <div class="row mt-4">
   <div class="col-md-6">
     <h3>Mark a New Location:</h3>
+
+<div class="hero-body">
+    <div class="container has-text-centered">
+        <div class="column is-9 is-center">
+            <div class="box">
+                <p class="subtitle is-4">Pin A New Location!</p>
+                <br/>
+                <form>
+                    <div class="field">
+                        <input 
+                            type="text" 
+                            class="input is-medium"
+                            placeholder="Location Name">
+                    </div>
+                    <div class="field">
+                        <input 
+                            type="text" 
+                            class="input is-medium"
+                            placeholder="latitude">
+                    </div>
+                    <div class="field">
+                        <input 
+                            type="text" 
+                            class="input is-medium"
+                            placeholder="longitude">
+                    </div>
+                    <div class="field">
+                        <input 
+                            type="text" 
+                            class="textarea"
+                            placeholder="What was it like there?">
+                    </div>
+                    <div class="mb-4">
+                        <button 
+                            type="submit"
+                            class="button is-link px-4">
+                            Pin on Map
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <form>
     <div>

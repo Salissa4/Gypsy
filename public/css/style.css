@@ -70,6 +70,9 @@ a:hover {
 #small {
   font-size: 20px; /*Font size for top logo text*/
 }
+#small2 {
+  font-size: 20px; /*Font size for top logo text*/
+}
 
 #big {
   font-family: "Acme", sans-serif;
@@ -80,7 +83,7 @@ a:hover {
   font-family: "Acme", sans-serif;
   font-size: 65px;
   line-height: 0.8;
-  padding-top: 1rem;
+  padding-bottom: 50rem;
 }
 
 /*Format for logo circle and text placement*/
@@ -92,6 +95,15 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   padding-top: 9rem;
+}
+#circle2 {
+  background-color: rgb(196, 138, 178);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
 }
 
 p.whitetxt {
@@ -122,7 +134,6 @@ div#circle {
   margin-top: 4rem; /*Moves circle down*/
   margin-bottom: 1rem;
 }
-
 
 /* .hero-body {
   padding-top: 0;

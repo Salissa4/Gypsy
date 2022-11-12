@@ -3,12 +3,20 @@
   <link rel="stylesheet" href="/public/css/style.css"/>
 </head>
 
+{{!-- after user signs in, maybe the site shows their name at top?? --}}
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+{{!-- form to create a new marker --}}
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Mark a New Location:</h3>
+
 <form>
     <div>
-        <div>
-            <label>User Name</label>
-            <input>
-        </div>
         <div>
             <label>Location Name</label>
             <input>
@@ -31,3 +39,5 @@
         <button>Submit</button>
     </div>
 </form>
+
+{{!-- down here maybe a list of locations user has marked --}}

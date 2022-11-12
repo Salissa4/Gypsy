@@ -1,4 +1,4 @@
-
+/* ================================================================================ Homepage css */
 * {
   /* background-color: #f2f2f071; Transparency is causing a weird gradient effect */
   font-family: "Quicksand", serif;
@@ -99,6 +99,8 @@ p.whitetxt {
   text-align: center;
 }
 
+
+/*Column layout*/
 .column.is-9, .column.is-9-tablet {
   flex: none;
   width: 75%;
@@ -106,10 +108,14 @@ p.whitetxt {
   margin-right: auto;
 }
 
+/*Positions the logo on signup page*/
 div#circle {
   margin-top: 4rem; /*Moves circle down*/
   margin-bottom: 1rem;
 }
+
+/* ==================================================================== Signup page*/
+
 
 /* .hero-body {
   padding-top: 0;

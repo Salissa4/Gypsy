@@ -8,10 +8,6 @@
   color: #bc8ac6;
 }
 
-.footer-text {
-  text-align: left;
-}
-
 .hero.is-success {
   background: #f2f6fa;
 }
@@ -68,8 +64,11 @@ a:hover {
   margin-top: 10px;
 }
 
-.footer-text {
+/*Footer css*/
+p.footer-text {
   font-weight: initial;
+  text-align: center;
+  /* bottom: 8px; Want to center at the bottom*/
 }
 
 /*Font-size for top text on homepage logo*/
@@ -104,23 +103,11 @@ a:hover {
   text-align: center;
 }
 
-
-
 .navbar-menu{
   background-color: rgb(196, 138, 178);
 }
 
-p.whitetxt2 {
-  background: none;
-} 
-
 .whitetxt {
-  color: white;
-  text-align: center;
-}
-
-
-.whitetxt2 {
   color: white;
   text-align: center;
 }
@@ -139,7 +126,20 @@ div#circle_home {
   margin-bottom: 1rem;
 }
 
-/* ==================================================================== Signup page*/
+/*Hover effect background color*/
+.navbar-item:hover{
+  background-color: rgb(177, 80, 146) !important;
+}
+/* ====================================================================*/ 
+
+p.whitetxt2 {
+  background: none;
+} 
+
+.whitetxt2 {
+  color: white;
+  text-align: center;
+}
 
 /*Sign up page logo*/
 /* #circle {
@@ -232,3 +232,18 @@ div#circle {
  .button.is-block.is-info.is-large.is-fullwidth {
   background-color: #bc8ac6; 
 } */
+
+/*=============================================================================== Map page CSS*/
+
+button.button{
+  background-color: rgb(196, 138, 178);
+  color: white;
+  width: 10rem;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.button.is-hovered, .button:hover {
+  background-color: rgb(177, 80, 146);
+  color: #ffffff;
+}

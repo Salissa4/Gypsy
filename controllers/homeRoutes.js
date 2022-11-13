@@ -22,4 +22,13 @@ router.get('/map', (req, res) => {
   res.render('map');
 });
 
+router.get('/profile', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('profile');
+});
+
 module.exports = router;

@@ -1,8 +1,5 @@
 /* ================================================================================ Homepage css */
 * {
-  /* background-color: #f2f2f071; Transparency is causing a weird gradient effect */
-  /* font-family: "Quicksand", serif; */
-  /* font-size: 14px; */
   font-weight: 300;
   box-sizing: border-box;
 }
@@ -145,7 +142,7 @@ div#circle_home {
 /* ==================================================================== Signup page*/
 
 /*Sign up page logo*/
-#circle {
+/* #circle {
   background-color: rgb(196, 138, 178);
   width: 250px;
   height: 250px;
@@ -167,12 +164,13 @@ div#circle_home {
  
 }
 
-/*Moves logo down*/
+
 div#circle {
   margin-top: 4rem;
   margin-bottom: 1rem;
-}
+} */
 
+/*=========================================================================================*/
 
 /* .hero-body {
   padding-top: 0;

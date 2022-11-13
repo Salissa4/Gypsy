@@ -1,9 +1,11 @@
+// Gets City Buttons by ID
 const austin = document.getElementById('austin');
 const houston = document.getElementById('houston');
 const dallas = document.getElementById('dallas');
 
 let map;
 
+// Renders Map Tile with Leaflet.js Library with Default Zoom
 const renderMapData = (lat, lon, zoom = 5.5) => {
   if (map) map.remove();
   map = L.map('map').setView([lat, lon], zoom);
@@ -49,7 +51,7 @@ const getMapAndMarkerData = async (value) => {
   renderMapMarkers(markerData);
 };
 
-// // Working function to double click to place marker on map and get coordinate data
+// Working function to double click to place marker on map and get coordinate data
 // map.on('dblclick', (e) => {
 //   L.marker(e.latlng).addTo(map);
 //   document.getElementsByClassName('coordinate')[0].innerHTML = e.latlng.lat + e.latlng.lng;
@@ -58,6 +60,7 @@ const getMapAndMarkerData = async (value) => {
 
 init();
 
+// Click functions to render specific map coordinates
 austin.addEventListener('click', (e) => {
   e.preventDefault();
   let value = austin.innerText;

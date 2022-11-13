@@ -1,9 +1,10 @@
 /* ================================================================================ Homepage css */
 * {
   /* background-color: #f2f2f071; Transparency is causing a weird gradient effect */
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   /* font-size: 14px; */
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 .subtitle.is-4 {
@@ -60,6 +61,12 @@ a:hover {
   color: #bababa;
 }
 
+/*Font-size for the homepage slogan*/
+#slogan a{
+  font-size: 45px;
+  font-weight: bold;
+}
+
 .languages {
   margin-top: 10px;
 }
@@ -68,15 +75,18 @@ a:hover {
   font-weight: initial;
 }
 
-#small {
-  font-size: 20px; /*Font size for top logo text*/
+/*Font-size for top text on homepage logo*/
+#small_home {
+  font-size: 44px; 
 }
 
-#big {
+/*Font-size for bottom text on logo*/
+#big_home {
   font-family: "Acme", sans-serif;
-  font-size: 65px;
+  font-size: 150px;
   line-height: 0.8;
 }
+
 #big2 {
   font-family: "Acme", sans-serif;
   font-size: 65px;
@@ -84,33 +94,39 @@ a:hover {
   padding-top: 1rem;
 }
 
-/*Format for logo circle and text placement*/
-#circle {
+
+/*Format for logo on the homepage and text placement*/
+#circle_home {
   background-color: rgb(196, 138, 178);
-  width: 250px;
-  height: 250px;
+  width: 550px;
+  height: 550px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 9rem;
+  text-align: center;
 }
 
-p.whitetxt {
-  background: none;
+
+
+.navbar-menu{
+  background-color: rgb(196, 138, 178);
 }
+
 p.whitetxt2 {
   background: none;
-}
+} 
 
 .whitetxt {
   color: white;
   text-align: center;
 }
+
+
 .whitetxt2 {
   color: white;
   text-align: center;
 }
-
 
 /*Column layout*/
 .column.is-9, .column.is-9-tablet {
@@ -121,12 +137,41 @@ p.whitetxt2 {
 }
 
 /*Positions the logo on signup page*/
-div#circle {
+div#circle_home {
   margin-top: 4rem; /*Moves circle down*/
   margin-bottom: 1rem;
 }
 
 /* ==================================================================== Signup page*/
+
+/*Sign up page logo*/
+#circle {
+  background-color: rgb(196, 138, 178);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+#small2{
+  font-size: 22px;
+}
+
+#big2 {
+  font-family: 'Acme', sans-serif;
+  font-size: 65px;
+  line-height: 0.3;
+ 
+}
+
+/*Moves logo down*/
+div#circle {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
 
 
 /* .hero-body {

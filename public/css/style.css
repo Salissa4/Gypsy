@@ -247,3 +247,26 @@ button.button{
   background-color: rgb(177, 80, 146);
   color: #ffffff;
 }
+
+/*Gypsy Logo in the upper right corner*/
+#logo_map {
+  background-color: rgb(196, 138, 178);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin: 15px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+/*Font for text on the page*/
+.font {
+  font-family: "Acme", sans-serif;
+  letter-spacing: 1.2px;
+}

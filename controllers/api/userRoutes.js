@@ -20,7 +20,6 @@ router.get("/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
-      // TODO: Include Marker and Map models?
     });
 
     res.status(200).json(userData);
@@ -50,15 +49,15 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Post request to login with validation of username
-router.post("/login", async (req, res) => {
+// Post request to login with validation of username and password
+router.post('/login', async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { username: req.body.username } });
+    const userData = await User.findOne({ where: { name: req.body.name } });
 
     if (!userData) {
       res
         .status(400)
-        .json({ message: "Incorrect Username or Password, please try again!" });
+        .json({ message: 'Incorrect Username or Password, please try again!' });
       return;
     }
 
@@ -66,14 +65,14 @@ router.post("/login", async (req, res) => {
 
     if (!validPassword) {
       res.status(400).json({
-        message: "Incorrect Username or Password, please try again! ",
+        message: 'Incorrect Username or Password, please try again!'
       });
       return;
     }
 
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.username = userData.username;
+      req.session.name = userData.name;
       req.session.logged_in = true;
 
       res.json({ user: userData, message: "You are now logged in!" });

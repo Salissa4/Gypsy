@@ -11,7 +11,6 @@ const signupFormHandler = async (event) => {
   
 
   if (name && email && password) {
-    console.log(name, email, password);
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
@@ -25,6 +24,5 @@ const signupFormHandler = async (event) => {
     }
   }
 };
-
 
 signUpBtn.addEventListener('click', signupFormHandler);

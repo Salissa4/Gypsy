@@ -2,12 +2,12 @@
 
 ## Description
 
-Do you ever travel and visit cool places but have no way to track the awesome places you would like to revisit? Gypsy is an app that allows any user to create a profile, drop markers on locations in Austin, Dallas, or Houston, allowing you, the traveler to save a location with a the ability to write a description. 
+Do you ever travel and visit cool places but have no way to track the awesome places you would like to revisit? Gypsy is an app that allows any user to create a profile, drop markers on locations in Austin, Dallas, or Houston, allowing you, the traveler to save a location with a the ability to write a description.
 
 ## User Story
 
 ```
-AS A traveler 
+AS A traveler
 I WANT to save the places I visit
 SO THAT I can keep track of the places I enjoy most while exploring a city
 ```
@@ -25,22 +25,22 @@ WHEN I log back it at another time, my saved locations, name and description wil
 
 ## Usage
 
-Live on [Heroku](https://polar-fortress-17473.herokuapp.com/) 
+Live on [Heroku](https://polar-fortress-17473.herokuapp.com/)
 
 ![Gypsy](/assets/demo.png)
 
-
 ## Technologies
 
-* Leaflet
-* Javascript
-* Bulma
-* CSS
-* Non Polar Magnetism via (https://www.npmjs.com/)
+- Leaflet
+- Javascript
+- Bulma
+- CSS
+- Non Polar Magnetism via (https://www.npmjs.com/)
 
-Dependencies: 
-- bcrypt 
-- connect session 
+Dependencies:
+
+- bcrypt
+- connect session
 - dotenv
 - handlebars
 - session
@@ -50,7 +50,8 @@ Dependencies:
 - sequelize
 
 DevDependencies:
-- Eslint 
+
+- Eslint
 - Eslint AirBnB
 - Eslint Prettier
 - Eslint Plugin
@@ -58,9 +59,9 @@ DevDependencies:
 
 ## Future Development
 
-* Expand to all US Major cities
-* Implement Geolocation
-* Feature that saves a photo of the location
+- Expand to all US Major cities
+- Implement Geolocation
+- Feature that saves a photo of the location
 
 ## Credits
 
@@ -100,7 +101,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
@@ -108,7 +108,6 @@ SOFTWARE.
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
 [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-
 ## How to Contribute
 
-[Contributor Covenant](https://www.contributor-covenant.org/) 
+[Contributor Covenant](https://www.contributor-covenant.org/)

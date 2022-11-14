@@ -10,7 +10,7 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
   if (map) map.remove();
   map = L.map('map').setView([lat, lon], zoom);
 
-  googleStreets = L.tileLayer(
+  const googleStreets = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
     {
       maxZoom: 20,

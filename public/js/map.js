@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 // Gets City Buttons by ID
 const austin = document.getElementById('austin');
 const houston = document.getElementById('houston');

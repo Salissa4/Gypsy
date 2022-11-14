@@ -37,26 +37,6 @@ Live on [Heroku](https://polar-fortress-17473.herokuapp.com/)
 - CSS
 - Non Polar Magnetism via (https://www.npmjs.com/)
 
-Dependencies:
-
-- bcrypt
-- connect session
-- dotenv
-- handlebars
-- session
-- leaflet
-- mysql2
-- normalize
-- sequelize
-
-DevDependencies:
-
-- Eslint
-- Eslint AirBnB
-- Eslint Prettier
-- Eslint Plugin
-- Prettier
-
 ## Future Development
 
 - Expand to all US Major cities

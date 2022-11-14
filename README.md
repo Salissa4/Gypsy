@@ -7,62 +7,60 @@ Do you ever travel and visit cool places but have no way to track the awesome pl
 ## User Story
 
 ```
-AS A user 
-I WANT to login/sign up 
-SO THAT 
+AS A traveler 
+I WANT to save the places I visit
+SO THAT I can keep track of the places I enjoy most while exploring a city
 ```
 
 ## Acceptance Criteria
 
 ```
-GIVEN a
-WHEN I 
-THEN an
-WHEN  
-THEN 
+GIVEN an option to select between: Austin, Dallas or Houston
+WHEN I double click the map
+THEN a pushpin is dropped/displays on the map
+WHEN the pushpin is dropped the coordinates are saved
+THEN I am able to enter a name and description
+WHEN I log back it at another time, my saved locations, name and description will be there
 ```
 
 ## Usage
 
-Live on [Heroku](https://hidden-fjord-92895.herokuapp.com/) 
+Live on [Heroku](https://polar-fortress-17473.herokuapp.com/) 
 
 ![Gypsy](/assets/demo.png)
 
-## Technologies Used
+
+## Technologies
+
+* Leaflet
+* Javascript
+* Bulma
+* CSS
+* Non Polar Magnetism via (https://www.npmjs.com/)
+
+Dependencies: 
+- bcrypt 
+- connect session 
+- dotenv
+- handlebars
+- session
+- leaflet
+- mysql2
+- normalize
+- sequelize
+
+DevDependencies:
+- Eslint 
+- Eslint AirBnB
+- Eslint Prettier
+- Eslint Plugin
+- Prettier
 
 ## Future Development
 
-## Local Installation
-
-To run via local environment: 
-1.  Clone the repository
-
-2.  Open terminal, and navigate to the appropriate directory
-
-3.  From command line:
-- `npm install` 
-
-Dependencies:
-
-- bcrypt `npm i bcrypt`
-- connect session `npm i connect-session-sequelize`
-- dotenv `npm i dotenv`
-- express `npm i express`
-- handlebars `npm i express-handlebars`
-- session `npm i express-session`
-- leaflet `npm i leaflet`
-- mysql2 `npm i mysql2`
-- normalize `npm i normalize.css`
-- sequelize `npm i sequelize`
-
-DevDependencies:
-
-- Eslint `npm i eslint --save-dev`
-- Eslint AirBnB `npm i eslint-config-airbnb-base --save-dev`
-- Eslint Prettier `npm i eslint-config-prettier --save-dev`
-- Eslint Plugin `npm i eslint-plugin-import --save-dev`
-- Prettier `npm i prettier --save-dev`
-
+* Expand to all US Major cities
+* Implement Geolocation
+* Feature that saves a photo of the location
 
 ## Credits
 

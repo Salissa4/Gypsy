@@ -4,6 +4,10 @@ const austin = document.getElementById('austin');
 const houston = document.getElementById('houston');
 const dallas = document.getElementById('dallas');
 const addMarkerButton = document.getElementById('add-marker');
+const markerName = document.getElementById('marker-name');
+const markerLatitude = document.getElementById('marker-latitude');
+const markerLongitude = document.getElementById('marker-longitude');
+const markerDescription = document.getElementById('marker-description');
 
 let mapData;
 let map;
@@ -64,7 +68,15 @@ const getMapAndMarkerData = async (value) => {
 };
 
 const sendNewMarkerToDB = async () => {
-  console.log(mapData.id);
+  // mapData.id
+
+  let body = {
+    name: markerName.value,
+    description: markerDescription.value,
+    marker_coordinates_lat: markerLatitude.value,
+    marker_coordinates_lon: markerLongitude.value,
+  };
+  console.log(body);
 };
 
 init();

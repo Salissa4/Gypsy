@@ -56,7 +56,7 @@ const renderMapMarkers = (markers) => {
 const getMapAndMarkerData = async (value) => {
   addMarkerButton.disabled = false;
 
-  mapData = await (await fetch(`/api/maps/${value}`)).json();
+  if (!mapData) mapData = await (await fetch(`/api/maps/${value}`)).json();
   let { id, map_coordinates_lat, map_coordinates_lon } = mapData;
 
   let mapMarkers = await fetch(`/api/markers/${id}`);

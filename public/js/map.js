@@ -20,7 +20,8 @@ const listenForClick = () => {
         if (layer !== googleStreets) layer.remove();
       });
       L.marker(e.latlng).addTo(map);
-      console.log(e.latlng.lat, e.latlng.lng);
+      markerLatitude.value = e.latlng.lat;
+      markerLongitude.value = e.latlng.lng;
     });
   }
 };

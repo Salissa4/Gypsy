@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
@@ -23,7 +23,7 @@ router.get('/map', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
@@ -32,11 +32,15 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/dashboard', (req, res) => {
+  if(req.session.logged_in) {
   res.render('/dashboard');
+  }
 });
 
 router.get('/map', (req, res) => {
+  if (req.session.logged_in) {
   res.render('map');
+  }
 });
 
 module.exports = router;

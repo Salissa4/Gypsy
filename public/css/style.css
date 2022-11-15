@@ -1,4 +1,14 @@
-html,
+:root {
+  --light-purple: #BC8AC6;
+
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: var(--light-purple);
+}
+
+/* html,
 body {
   font-family: "Quicksand", serif;
   font-size: 14px;
@@ -18,7 +28,7 @@ body {
   text-align: left;
 }
 
-/* TODO: IMPORT BACKGROUND IMAGE */
+
 /* html {
   overflow-y: hidden !important;
   background-image: url("../media/background.jpg") !important;
@@ -30,7 +40,7 @@ body {
   background-repeat: no-repeat;
 } */
 
-.hero.is-success {
+/* .hero.is-success {
   background: #f2f6fa;
 }
 .hero .nav,
@@ -111,7 +121,7 @@ p {
 }
 
 
-* {
+ {
   background-color: #f2f2f071;
 }
 
@@ -147,7 +157,7 @@ p {
 
 /* button styling */
 
-.control {
+/* .control {
   background-color: purple;
   color: black;
   border: 2px solid white;
@@ -181,7 +191,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-* {
+ {
   background-color: #f2f2f071;
 }
 .subtitle.is-4 {
@@ -245,4 +255,4 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
-
+ */ 

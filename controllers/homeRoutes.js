@@ -19,7 +19,7 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/map', (req, res) => {
-  res.render('map', markers);
+  res.render('map');
 });
 
 router.get('/login', (req, res) => {

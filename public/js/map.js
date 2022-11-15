@@ -57,7 +57,9 @@ const renderMapMarkers = (markers) => {
       mark.marker_coordinates_lon,
     ]);
     marker.addTo(map);
-    marker.bindPopup(mark.name).openPopup();
+    marker
+      .bindPopup(`<h2><strong>${mark.name}</strong></h2>${mark.description}`)
+      .openPopup();
   }
 
   listenForClick();

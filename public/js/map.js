@@ -12,6 +12,7 @@ const markerDescription = document.getElementById('marker-description');
 let mapData;
 let googleStreets;
 let map;
+let markerData;
 
 const listenForClick = () => {
   if (map) {
@@ -56,6 +57,7 @@ const renderMapMarkers = (markers) => {
       mark.marker_coordinates_lon,
     ]);
     marker.addTo(map);
+    marker.bindPopup(mark.name).openPopup();
   }
 
   listenForClick();
@@ -68,7 +70,7 @@ const getMapAndMarkerData = async (value) => {
   let { id, map_coordinates_lat, map_coordinates_lon } = mapData;
 
   let mapMarkers = await fetch(`/api/markers/${id}`);
-  let markerData = await mapMarkers.json();
+  markerData = await mapMarkers.json();
 
   renderMapData(map_coordinates_lat, map_coordinates_lon, 11);
 

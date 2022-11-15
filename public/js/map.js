@@ -20,6 +20,7 @@ const listenForClick = () => {
         if (layer !== googleStreets) layer.remove();
       });
       L.marker(e.latlng).addTo(map);
+      console.log(e.latlng.lat, e.latlng.lng);
     });
   }
 };
@@ -40,7 +41,7 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
 
   //   // document.getElementsByClassName('coordinate')[0].innerHTML =
   //   //   e.latlng.lat + e.latlng.lng;
-  //   // console.log(e.latlng.lat, e.latlng.lng);
+
   // });
 };
 

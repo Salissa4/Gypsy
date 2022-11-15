@@ -12,6 +12,14 @@ const markerDescription = document.getElementById('marker-description');
 let mapData;
 let map;
 
+const listenForClick = () => {
+  if (map) {
+    map.on('click', (e) => {
+      console.log(e);
+    });
+  }
+};
+
 // Renders Map Tile with Leaflet.js Library with Default Zoom
 const renderMapData = (lat, lon, zoom = 5.5) => {
   if (map) map.remove();
@@ -28,10 +36,11 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
 
   // Working function to double click to place marker on map and get coordinate data
   // map.on('dblclick', (e) => {
-  //   L.marker(e.latlng).addTo(map);
-  //   document.getElementsByClassName('coordinate')[0].innerHTML =
-  //     e.latlng.lat + e.latlng.lng;
-  //   console.log(e.latlng.lat, e.latlng.lng);
+  //   console.log('hello');
+  //   // L.marker(e.latlng).addTo(map);
+  //   // document.getElementsByClassName('coordinate')[0].innerHTML =
+  //   //   e.latlng.lat + e.latlng.lng;
+  //   // console.log(e.latlng.lat, e.latlng.lng);
   // });
 };
 
@@ -41,6 +50,8 @@ const init = async () => {
     await initialMapData.json();
 
   renderMapData(map_coordinates_lat, map_coordinates_lon);
+
+  listenForClick();
 };
 
 const renderMapMarkers = (markers) => {
@@ -51,6 +62,7 @@ const renderMapMarkers = (markers) => {
     ]);
     marker.addTo(map);
   }
+  listenForClick();
 };
 
 const getMapAndMarkerData = async (value) => {
@@ -68,8 +80,6 @@ const getMapAndMarkerData = async (value) => {
 };
 
 const sendNewMarkerToDB = async () => {
-  // mapData.id
-
   let body = {
     name: markerName.value,
     description: markerDescription.value,

@@ -1,4 +1,4 @@
-<nav class='navbar has-shadow'>
+<nav class='navbar has-shadow '>
   <div class='navbar-brand'>
     <a class='navbar-burger' id='burger'>
       <span></span>
@@ -9,7 +9,7 @@
   <div class='navbar-menu' id='navbar-links'>
     <div class='navbar-end'>
       <a class='navbar-item' href='/'>Home</a>
-      {{#if logged_in}}
+      {{#if loggedIn}}
         <a class='navbar-item' id='logout' href='/'>Logout</a>
       {{else}}
         <a class='navbar-item' id='login' href='/login'>Login</a>

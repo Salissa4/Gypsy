@@ -37,6 +37,7 @@ const renderMapMarkers = (markers) => {
       mark.marker_coordinates_lon,
     ]);
     marker.addTo(map);
+    
   }
 };
 

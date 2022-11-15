@@ -20,7 +20,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: var(--light-purple) !important;
+  background-color: var(--purple) !important;
   
 }
 

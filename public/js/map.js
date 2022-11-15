@@ -15,7 +15,7 @@ let map;
 
 const listenForClick = () => {
   if (map) {
-    map.on('click', (e) => {
+    map.on('dblclick', (e) => {
       map.eachLayer((layer) => {
         if (layer !== googleStreets) layer.remove();
       });
@@ -39,11 +39,6 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
     },
   );
   googleStreets.addTo(map);
-
-  //   // document.getElementsByClassName('coordinate')[0].innerHTML =
-  //   //   e.latlng.lat + e.latlng.lng;
-
-  // });
 };
 
 const init = async () => {
@@ -95,6 +90,11 @@ const sendNewMarkerToDB = async () => {
     },
     body: JSON.stringify(body),
   });
+
+  markerName.value = '';
+  markerLatitude.value = '';
+  markerLongitude.value = '';
+  markerDescription.value = '';
 
   getMapAndMarkerData();
 };

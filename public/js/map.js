@@ -3,7 +3,7 @@
 const austin = document.getElementById('austin');
 const houston = document.getElementById('houston');
 const dallas = document.getElementById('dallas');
-
+const addMarkerButton = document.getElementById('add-marker');
 
 let map;
 
@@ -38,7 +38,6 @@ const renderMapMarkers = (markers) => {
       mark.marker_coordinates_lon,
     ]);
     marker.addTo(map);
-    
   }
 };
 
@@ -80,4 +79,9 @@ dallas.addEventListener('click', (e) => {
   e.preventDefault();
   let value = dallas.innerText;
   getMapAndMarkerData(value);
+});
+
+addMarkerButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('hi');
 });

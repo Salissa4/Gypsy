@@ -58,7 +58,7 @@ const renderMapMarkers = (markers) => {
     ]);
     marker.addTo(map);
     marker
-      .bindPopup(`<h2><strong>${mark.name}</strong></h2>${mark.description}`)
+      .bindPopup(`<h2>${mark.name}</h2>${mark.description}`)
       .openPopup();
   }
 

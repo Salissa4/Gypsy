@@ -76,7 +76,16 @@ const sendNewMarkerToDB = async () => {
     marker_coordinates_lat: markerLatitude.value,
     marker_coordinates_lon: markerLongitude.value,
   };
-  console.log(body);
+
+  await fetch(`/api/markers/${mapData.id}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(body),
+  });
+
+  getMapAndMarkerData();
 };
 
 init();

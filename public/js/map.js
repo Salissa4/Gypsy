@@ -20,6 +20,14 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
     },
   );
   googleStreets.addTo(map);
+
+  // Working function to double click to place marker on map and get coordinate data
+  // map.on('dblclick', (e) => {
+  //   L.marker(e.latlng).addTo(map);
+  //   document.getElementsByClassName('coordinate')[0].innerHTML =
+  //     e.latlng.lat + e.latlng.lng;
+  //   console.log(e.latlng.lat, e.latlng.lng);
+  // });
 };
 
 const init = async () => {
@@ -51,13 +59,6 @@ const getMapAndMarkerData = async (value) => {
 
   renderMapMarkers(markerData);
 };
-
-// Working function to double click to place marker on map and get coordinate data
-// map.on('dblclick', (e) => {
-//   L.marker(e.latlng).addTo(map);
-//   document.getElementsByClassName('coordinate')[0].innerHTML = e.latlng.lat + e.latlng.lng;
-//   console.log(e.latlng.lat, e.latlng.lng);
-// });
 
 init();
 

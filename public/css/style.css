@@ -6,10 +6,17 @@
 
 body {
   font-family: 'Anton', sans-serif;
+  background-image: url('../images/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .navbar {
   background-color: var(--dark-puple);
+  border-bottom: 2px solid black;
 }
 
 #small_home{
@@ -26,6 +33,7 @@ body {
   text-align: center;
   width: 250px;
   height: 250px;
+  border: 1px solid black;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;

@@ -1,3 +1,6 @@
+/* eslint-disable camelcase */
+/* eslint-disable prefer-const */
+/* eslint-disable no-undef */
 /* eslint-disable no-restricted-syntax */
 // Gets City Buttons by ID
 const austin = document.getElementById('austin');
@@ -52,6 +55,7 @@ const init = async () => {
 
 const renderMapMarkers = (markers) => {
   for (let mark of markers) {
+    // eslint-disable-next-line prefer-const
     let marker = new L.Marker([
       mark.marker_coordinates_lat,
       mark.marker_coordinates_lon,

@@ -23,7 +23,6 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
 };
 
 const init = async () => {
-  console.log(austin);
   let initialMapData = await fetch('/api/maps/default');
   let { map_coordinates_lat, map_coordinates_lon } =
     await initialMapData.json();

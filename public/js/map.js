@@ -5,6 +5,7 @@ const houston = document.getElementById('houston');
 const dallas = document.getElementById('dallas');
 const addMarkerButton = document.getElementById('add-marker');
 
+let mapData;
 let map;
 
 // Renders Map Tile with Leaflet.js Library with Default Zoom
@@ -49,8 +50,8 @@ const renderMapMarkers = (markers) => {
 };
 
 const getMapAndMarkerData = async (value) => {
-  let mapData = await fetch(`/api/maps/${value}`);
-  let { id, map_coordinates_lat, map_coordinates_lon } = await mapData.json();
+  mapData = await (await fetch(`/api/maps/${value}`)).json();
+  let { id, map_coordinates_lat, map_coordinates_lon } = mapData;
 
   let mapMarkers = await fetch(`/api/markers/${id}`);
   let markerData = await mapMarkers.json();
@@ -58,6 +59,10 @@ const getMapAndMarkerData = async (value) => {
   renderMapData(map_coordinates_lat, map_coordinates_lon, 11);
 
   renderMapMarkers(markerData);
+};
+
+const sendNewMarkerToDB = async () => {
+  console.log(mapData.id);
 };
 
 init();
@@ -83,5 +88,5 @@ dallas.addEventListener('click', (e) => {
 
 addMarkerButton.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log('hi');
+  sendNewMarkerToDB();
 });

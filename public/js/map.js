@@ -10,11 +10,15 @@ const markerLongitude = document.getElementById('marker-longitude');
 const markerDescription = document.getElementById('marker-description');
 
 let mapData;
+let googleStreets;
 let map;
 
 const listenForClick = () => {
   if (map) {
     map.on('click', (e) => {
+      map.eachLayer((layer) => {
+        if (layer !== googleStreets) layer.remove();
+      });
       console.log(e);
     });
   }
@@ -25,7 +29,7 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
   if (map) map.remove();
   map = L.map('map').setView([lat, lon], zoom);
 
-  const googleStreets = L.tileLayer(
+  googleStreets = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
     {
       maxZoom: 20,
@@ -60,6 +64,8 @@ const renderMapMarkers = (markers) => {
     ]);
     marker.addTo(map);
   }
+
+  listenForClick();
 };
 
 const getMapAndMarkerData = async (value) => {

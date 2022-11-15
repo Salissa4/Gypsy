@@ -50,8 +50,6 @@ const init = async () => {
     await initialMapData.json();
 
   renderMapData(map_coordinates_lat, map_coordinates_lon);
-
-  listenForClick();
 };
 
 const renderMapMarkers = (markers) => {
@@ -62,7 +60,6 @@ const renderMapMarkers = (markers) => {
     ]);
     marker.addTo(map);
   }
-  listenForClick();
 };
 
 const getMapAndMarkerData = async (value) => {
@@ -103,18 +100,21 @@ init();
 // Click functions to render specific map coordinates
 austin.addEventListener('click', (e) => {
   e.preventDefault();
+  mapData = '';
   let value = austin.innerText;
   getMapAndMarkerData(value);
 });
 
 houston.addEventListener('click', (e) => {
   e.preventDefault();
+  mapData = '';
   let value = houston.innerText;
   getMapAndMarkerData(value);
 });
 
 dallas.addEventListener('click', (e) => {
   e.preventDefault();
+  mapData = '';
   let value = dallas.innerText;
   getMapAndMarkerData(value);
 });

@@ -1,7 +1,7 @@
 // Imports Express, Blog Model, and withAuth helper function
 const router = require('express').Router();
 const { User, Marker } = require('../../models');
-const withAuth = require('../../utils/auth');
+// const withAuth = require('../../utils/auth');
 
 router.get('/:map_id', async (req, res) => {
   try {

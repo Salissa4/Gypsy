@@ -1,6 +1,6 @@
-<nav class='navbar has-shadow is-link'>
+<nav class='navbar has-shadow'>
   <div class='navbar-brand'>
-    <h1 class='ml-3 is-size-3 has-text-weight-medium'>my_Techblog();</h1>
+    <h1 class='ml-3 is-size-3 has-text-weight-medium'>Gypsy</h1>
     <a class='navbar-burger' id='burger'>
       <span></span>
       <span></span>
@@ -10,7 +10,7 @@
   <div class='navbar-menu' id='navbar-links'>
     <div class='navbar-end'>
       <a class='navbar-item' href='/'>Home</a>
-      {{#if loggedIn}}
+      {{#if logged_in}}
         <a class='navbar-item' id='logout' href='/'>Logout</a>
       {{else}}
         <a class='navbar-item' id='login' href='/login'>Login</a>

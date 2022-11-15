@@ -1,20 +1,14 @@
-<div class="columns">
-  <div class="column">
-    <div class="hero has-background-info-light is-fullheight has-text-centered">
-      <div id="map" class="container m-4 mr-4"></div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="container">
-      <div class="column is-one-quarter"></div>
-      <div class="column is-one-quarter">
-        <button class="button" id="austin">Austin</button>
-        <button class="button" id="houston">Houston</button>
-        <button class="button" id="dallas">Dallas</button>
-      </div>
-      <div class="column is-one-quarter"></div>
-    </div>
-  </div>
+      <div class="hero is-fullheight-with-navbar has-text-centered">
+        <div class="is-flex-direction-row is-justify-content-space-evenly p-5">
+        <button class="button mr-5" id="austin">Austin</button>
+        <button class="button mx-5" id="houston">Houston</button>
+        <button class="button ml-5" id="dallas">Dallas</button>
+        </div>
+        <div id="map" class="container is-fluid">
+        </div>
+
+    {{> newMarker}}
+  
 </div>
 <script
   src='https://unpkg.com/leaflet@1.9.2/dist/leaflet.js'

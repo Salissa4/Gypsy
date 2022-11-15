@@ -1,13 +1,66 @@
-html,
+:root {
+  --light-purple: #BC8AC6;
+  --purple: rgb(196, 138, 178);
+}
+
 body {
-  font-family: "Quicksand", serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-family: 'Anton', sans-serif;
 }
-* {
-  background-color: #f2f2f071;
- 
+
+.nav {
+  background-color: var(--light-purple);
 }
+
+#small_home{
+  font-size: 20px;
+}
+
+#big_home {
+  font-size: 65px;
+  line-height: 0.25;
+}
+
+#circle_home {
+  background-color: var(--light-purple);
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.whitetxt {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 678px) {
+  #circle_home {
+    width: 600px;
+    height: 600px;
+    padding-top: 8rem;
+  }
+
+  #big_home {
+    font-size: 175px;
+    line-height: 1;
+  }
+
+  #small_home {
+    font-size: 25px; 
+  } 
+
+  button {
+    background-color: rgb(196, 138, 178) !important;
+    color: white;
+    width: 10rem;
+    margin: 3px;
+    font-weight: bold;
+  }
+/* 
+
 .subtitle.is-4 {
   color: #bc8ac6;
 }
@@ -18,7 +71,7 @@ body {
   text-align: left;
 }
 
-/* TODO: IMPORT BACKGROUND IMAGE */
+
 /* html {
   overflow-y: hidden !important;
   background-image: url("../media/background.jpg") !important;
@@ -30,7 +83,7 @@ body {
   background-repeat: no-repeat;
 } */
 
-.hero.is-success {
+/* .hero.is-success {
   background: #f2f6fa;
 }
 .hero .nav,
@@ -70,38 +123,15 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
-
-#small{
-  font-size: 20px;
+*/
 
 
-}
-
-#big {
-  font-family: 'Acme', sans-serif;
-  font-size: 65px;
-  line-height: 0.8;
- 
-}
-
-#circle {
-  background-color: rgb(196, 138, 178);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5%;
-}
-
+/*
 p {
   background:none;
 }
 
-.whitetxt {
-  color: white;
-  text-align: center;
-}
+
 
 .column.is-9, .column.is-9-tablet {
   flex: none;
@@ -111,7 +141,7 @@ p {
 }
 
 
-* {
+ {
   background-color: #f2f2f071;
 }
 
@@ -147,7 +177,7 @@ p {
 
 /* button styling */
 
-.control {
+/* .control {
   background-color: purple;
   color: black;
   border: 2px solid white;
@@ -181,7 +211,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-* {
+ {
   background-color: #f2f2f071;
 }
 .subtitle.is-4 {
@@ -245,4 +275,4 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
-
+ */ 

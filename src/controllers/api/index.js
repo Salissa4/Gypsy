@@ -1,8 +1,7 @@
 const router = require('express').Router();
-const userRoutes = require('./userRoutes');
-const markerRoutes = require('./markerRoutes');
-const mapsRoutes = require('./mapsRoutes');
-
+const userRoutes = require('./user/userRoutes');
+const markerRoutes = require('./markers/markerRoutes');
+const mapsRoutes = require('./maps/mapsRoutes');
 
 router.use('/users', userRoutes);
 router.use('/markers', markerRoutes);

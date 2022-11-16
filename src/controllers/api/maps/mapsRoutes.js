@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 const router = require('express').Router();
-const { Maps } = require('../../models');
+const { Maps } = require('../../../models');
 
 router.get('/', async (req, res) => {
   try {
@@ -27,8 +27,10 @@ router.get('/default', async (req, res) => {
     const defaultMapData = await Maps.findOne({
       where: { city_name: 'DEFAULT' },
     });
+    console.log(defaultMapData);
     res.status(200).json(defaultMapData);
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
   }
 });

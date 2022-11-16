@@ -1,9 +1,35 @@
 // Imports Express, Blog Model, and withAuth helper function
-const router = require('express').Router();
-const { User, Marker } = require('../../models');
-// const withAuth = require('../../utils/auth');
+const router = require("express").Router();
+const { User, Marker } = require("../../../models");
+const withAuth = require("../../../utils/auth");
 
-router.get('/:map_id', async (req, res) => {
+router.get("/", async (req, res) => {
+  try {
+    const allMarkers = await Marker.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+      attributes: [
+        "id",
+        "name",
+        "description",
+        "marker_coordinates_lat",
+        "marker_coordinates_lon",
+        "date_created",
+        "map_id",
+      ],
+      include: {
+        model: User,
+        attributes: ["name"],
+      },
+    });
+    res.status(200).json(allMarkers);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/:map_id", async (req, res) => {
   try {
     const markersPerCity = await Marker.findAll({
       where: { map_id: req.params.map_id },
@@ -14,7 +40,7 @@ router.get('/:map_id', async (req, res) => {
   }
 });
 
-router.post('/:map_id', async (req, res) => {
+router.post("/:map_id", withAuth, async (req, res) => {
   try {
     const newMarker = await Marker.create({
       name: req.body.name,
@@ -22,6 +48,7 @@ router.post('/:map_id', async (req, res) => {
       marker_coordinates_lat: req.body.marker_coordinates_lat,
       marker_coordinates_lon: req.body.marker_coordinates_lon,
       map_id: req.params.map_id,
+      user_id: req.session.user_id,
     });
     res.status(200).json(newMarker);
   } catch (err) {

@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Marker extends Model {}
 
-// TODO: Add GeoJSON data field? See Coordinates field
+
 Marker.init(
   {
     id: {
@@ -33,13 +33,13 @@ Marker.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'user',
-    //     key: 'id',
-    //   },
-    // },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
     map_id: {
       type: DataTypes.INTEGER,
       references: {

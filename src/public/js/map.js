@@ -46,11 +46,16 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
 };
 
 const init = async () => {
+  try {
   let initialMapData = await fetch('/api/maps/default');
   let { map_coordinates_lat, map_coordinates_lon } =
     await initialMapData.json();
 
   renderMapData(map_coordinates_lat, map_coordinates_lon);
+  } catch (err) {
+    console.error(err);
+    throw new Error("Init Error");
+  }
 };
 
 const renderMapMarkers = (markers) => {

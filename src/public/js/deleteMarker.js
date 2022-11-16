@@ -1,15 +1,17 @@
+/* eslint-disable object-shorthand */
+/* eslint-disable no-use-before-define */
 const deleteMarkerbtn = document.getElementById("delete-marker");
 
 const deleteMarker = async (event) => {
   event.preventDefault();
 
-  const {
-    marker: { id },
-  } = id;
+  const id = { marker: id };
 
-  const response = await fetch("api/markers/:id", {
+  console.log(id);
+
+  const response = await fetch(`/api/markers/${id}`, {
     method: "DELETE",
-    body: JSON.stringify({ marker_id: id }),
+    body: JSON.stringify({ id: id }),
     headers: { "Content-Type": "application/json" },
   });
 

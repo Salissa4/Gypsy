@@ -1,0 +1,295 @@
+:root {
+  --purple: #bc8ac6;
+  --light-purple: #d7b9dd;
+  --dark-puple: #966e9e;
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  background-image: url("../images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: var(--dark-puple);
+  border-bottom: 2px solid black;
+}
+
+.navbar a:hover {
+  background-color: var(--purple) !important;
+}
+
+#small_home {
+  font-size: 20px;
+}
+
+#big_home {
+  font-size: 65px;
+  line-height: 0.25;
+}
+
+#circle_home {
+  background-color: var(--purple);
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.whitetxt {
+  color: white;
+  text-align: center;
+}
+
+button {
+  background-color: var(--light-purple) !important;
+  color: white;
+  width: 10rem;
+  margin: 3px;
+  font-weight: bold;
+}
+
+button :hover {
+  background-color: var(--dark-purple) !important;
+}
+
+@media screen and (min-width: 678px) {
+  #circle_home {
+    width: 600px;
+    height: 600px;
+    padding-top: 8rem;
+  }
+
+  #big_home {
+    font-size: 175px;
+    line-height: 1;
+  }
+
+  #small_home {
+    font-size: 25px;
+  }
+}
+/* 
+
+.subtitle.is-4 {
+  color: #bc8ac6;
+}
+.has-text-grey.a {
+  color: black;
+}
+.footer-text {
+  text-align: left;
+}
+
+
+/* html {
+  overflow-y: hidden !important;
+  background-image: url("../media/background.jpg") !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* .hero.is-success {
+  background: #f2f6fa;
+}
+.hero .nav,
+.hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box {
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+p.subtitle {
+  padding-top: 1rem;
+}
+.button.is-link.px-4 {
+  background-color: #bc8ac6;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #bababa;
+}
+
+.languages {
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-weight: initial;
+}
+*/
+
+/*
+p {
+  background:none;
+}
+
+
+
+.column.is-9, .column.is-9-tablet {
+  flex: none;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ {
+  background-color: #f2f2f071;
+}
+
+.column1 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: #4bc475;
+  border: 1px solid #000;
+}
+
+.callsign {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.callsign1 {
+  position: absolute;
+  bottom: 25;
+  left: 0;
+}
+.field {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  bottom: 25;
+  background-color: purple;
+}
+
+/* button styling */
+
+/* .control {
+  background-color: purple;
+  color: black;
+  border: 2px solid white;
+  font-family: nunito;
+}
+
+.button.is-success #submit {
+  background-color: purple;
+  color: black;
+  border: 2px solid white;
+  font-family: nunito;
+}
+.button.is-success:hover.is-success:hover {
+  background-color: grey;
+  color: white;
+}
+.callsign {
+  bottom: left;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+#map { 
+    height: 10rem;
+ }
+
+ html,
+body {
+  font-family: "Quicksand", serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+ {
+  background-color: #f2f2f071;
+}
+.subtitle.is-4 {
+  color: #bc8ac6;
+}
+.has-text-grey.a {
+  color: black;
+}
+.footer-text {
+  text-align: left;
+}
+
+html {
+  overflow-y: hidden !important;
+  background-image: url("../media/background.jpg") !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero.is-success {
+  background: #f2f6fa;
+}
+.hero .nav,
+.hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box {
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+p.subtitle {
+  padding-top: 1rem;
+}
+.button.is-block.is-info.is-large.is-fullwidth {
+  background-color: #bc8ac6;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #bababa;
+}
+
+.languages {
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-weight: initial;
+}
+ */

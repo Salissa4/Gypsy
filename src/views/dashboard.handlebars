@@ -1,0 +1,13 @@
+<div class="container is-fluid">
+    {{#if markers.length}}
+      <h2 class="has-text-centered">Your Map Markers</h2>
+      <ul>
+        <li>
+        {{#each markers as |marker|}}
+          {{> markers marker }}
+        {{/each}}
+        </li>
+        </ul>
+    {{/if}}
+<script src="./js/deleteMarker.js"></script>
+</div>

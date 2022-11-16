@@ -27,7 +27,7 @@ WHEN I log back it at another time, my saved locations, name and description wil
 
 Live on [Heroku](https://polar-fortress-17473.herokuapp.com/)
 
-![Gypsy](/assets/demo.png)
+![Gypsy](/src/public/images/demo.png)
 
 ## Technologies
 

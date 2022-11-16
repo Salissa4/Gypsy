@@ -57,7 +57,7 @@ router.post("/:map_id", withAuth, async (req, res) => {
 });
 
 // // Deletes Existing map marker by ID
-// router.delete('/:id', withAuth, async (req, res) => {
+// router.delete("/:id", withAuth, async (req, res) => {
 //   try {
 //     const markerData = await Marker.destroy({
 //       where: {
@@ -67,7 +67,7 @@ router.post("/:map_id", withAuth, async (req, res) => {
 //     });
 
 //     if (!markerData) {
-//       res.status(404).json({ message: 'No map marker found with this id!' });
+//       res.status(404).json({ message: "No map marker found with this id!" });
 //       return;
 //     }
 

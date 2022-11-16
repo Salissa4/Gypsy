@@ -1,5 +1,4 @@
-
- <div class="card m-4">
+<div class="card m-2">
   <div class="card-content">
     <div class="media">
       <div class="media-left">
@@ -7,12 +6,17 @@
           <i class="fa-solid fa-map-pin fa-2xl"></i>
         </figure>
       </div>
-      <div >
+      <div>
         <p class="title is-4">{{name}}</p>
       </div>
     </div>
     <div class="content">
-      {{content}}
-      <br>
-      <button class="button is-rounded is-danger m-2"><i class="p-2 fa-solid fa-trash" id="delete-marker"></i>Delete</button>
+      {{description}}
+      <p>Created at: {{format_date date_created}} by: {{user.name}}</p>
+      <br />
+      <button class="button is-rounded is-danger m-2" id="delete-marker"><i
+          class="p-2 fa-solid fa-trash"
+        ></i>Delete</button>
     </div>
+  </div>
+</div>

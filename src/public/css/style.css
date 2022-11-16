@@ -14,10 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-.main-container {
-  overflow-y: scroll;
-}
-
 .navbar {
   background-color: var(--dark-puple);
   border-bottom: 2px solid black;

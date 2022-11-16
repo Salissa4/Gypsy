@@ -7,8 +7,6 @@ const deleteMarker = async (e) => {
   const id = e.target.parentNode.id;
   console.log(id);
 
-  //   id.parentNode.removeChild(id);
-
   const response = await fetch(`/api/markers/${id}`, {
     method: "DELETE",
     body: JSON.stringify({ id: id }),

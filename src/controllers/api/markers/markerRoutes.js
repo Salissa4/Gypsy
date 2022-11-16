@@ -3,7 +3,7 @@ const router = require("express").Router();
 const { User, Marker } = require("../../../models");
 const withAuth = require("../../../utils/auth");
 
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     const allMarkers = await Marker.findAll({
       where: {
@@ -29,10 +29,10 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:map_id", async (req, res) => {
+router.get("/:map_id", withAuth, async (req, res) => {
   try {
     const markersPerCity = await Marker.findAll({
-      where: { map_id: req.params.map_id },
+      where: { map_id: req.params.map_id, user_id: req.session.user_id },
     });
     res.status(200).json(markersPerCity);
   } catch (err) {

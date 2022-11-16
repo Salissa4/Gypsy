@@ -35,7 +35,7 @@ const app = express();
 
   // Inform Express.js on which template engine to use
   // need to see if we need to change these?
-  app.set('views', path.join(__dirname, 'views'));
+  app.set("views", path.join(__dirname, "views"));
   app.engine("handlebars", hbs.engine);
   app.set("view engine", "handlebars");
 
@@ -46,13 +46,15 @@ const app = express();
   app.use(routes);
 
   try {
-    await sequelize.sync({ force: false })
-  } catch(err) {
+    await sequelize.sync({ force: false });
+  } catch (err) {
     console.error(err);
     process.exit(1);
   }
-  
+
   app.listen(config.PORT, () =>
-      console.log(chalk.cyanBright(`Listening on http://localhost:${config.PORT}`))
-    );
+    console.log(
+      chalk.cyanBright(`Listening on http://localhost:${config.PORT}`)
+    )
+  );
 })();

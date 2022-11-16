@@ -16,7 +16,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/map");
+      document.location.href = "/map";
     } else {
       alert(response.statusText);
     }

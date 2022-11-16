@@ -57,24 +57,24 @@ router.post("/:map_id", withAuth, async (req, res) => {
 });
 
 // // Deletes Existing map marker by ID
-// router.delete("/:id", withAuth, async (req, res) => {
-//   try {
-//     const markerData = await Marker.destroy({
-//       where: {
-//         id: req.params.id,
-//         user_id: req.session.user_id,
-//       },
-//     });
+router.delete("/:id", withAuth, async (req, res) => {
+  try {
+    const markerData = await Marker.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
 
-//     if (!markerData) {
-//       res.status(404).json({ message: "No map marker found with this id!" });
-//       return;
-//     }
+    if (!markerData) {
+      res.status(404).json({ message: "No map marker found with this id!" });
+      return;
+    }
 
-//     res.status(200).json(markerData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.status(200).json(markerData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

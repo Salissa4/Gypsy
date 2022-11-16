@@ -1,17 +1,21 @@
 :root {
-  --purple: #BC8AC6;
+  --purple: #bc8ac6;
   --light-purple: #d7b9dd;
   --dark-puple: #966e9e;
 }
 
 body {
-  font-family: 'Anton', sans-serif;
-  background-image: url('../images/Background.jpg');
+  font-family: "Anton", sans-serif;
+  background-image: url("../images/Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   box-sizing: border-box;
+}
+
+.main-container {
+  overflow-y: scroll;
 }
 
 .navbar {
@@ -21,10 +25,9 @@ body {
 
 .navbar a:hover {
   background-color: var(--purple) !important;
-  
 }
 
-#small_home{
+#small_home {
   font-size: 20px;
 }
 
@@ -49,8 +52,6 @@ body {
   color: white;
   text-align: center;
 }
-
-
 
 button {
   background-color: var(--light-purple) !important;
@@ -77,11 +78,8 @@ button :hover {
   }
 
   #small_home {
-    font-size: 25px; 
-  } 
-
-
-
+    font-size: 25px;
+  }
 }
 /* 
 
@@ -148,7 +146,6 @@ a:hover {
   font-weight: initial;
 }
 */
-
 
 /*
 p {
@@ -299,4 +296,4 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
- */ 
+ */

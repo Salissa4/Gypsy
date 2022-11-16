@@ -1,13 +1,13 @@
+/* eslint-disable prefer-destructuring */
 /* eslint-disable object-shorthand */
 /* eslint-disable no-use-before-define */
 const deleteMarkerbtn = document.getElementById("delete-marker");
 
-const deleteMarker = async (event) => {
-  event.preventDefault();
-
-  const id = { marker: id };
-
+const deleteMarker = async (e) => {
+  const id = e.target.parentNode.id;
   console.log(id);
+
+  //   id.parentNode.removeChild(id);
 
   const response = await fetch(`/api/markers/${id}`, {
     method: "DELETE",
@@ -23,4 +23,6 @@ const deleteMarker = async (event) => {
   }
 };
 
-deleteMarkerbtn.addEventListener("click", deleteMarker);
+if (deleteMarkerbtn) {
+  deleteMarkerbtn.addEventListener("click", deleteMarker);
+}

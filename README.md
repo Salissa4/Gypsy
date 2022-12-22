@@ -25,7 +25,7 @@ WHEN I log back it at another time, my saved locations, name and description wil
 
 ## Usage
 
-Live on [Heroku](https://polar-fortress-17473.herokuapp.com/)
+Live on [Heroku](https://pure-peak-95833.herokuapp.com/)
 
 ![Gypsy](/src/public/images/demo.png)
 
